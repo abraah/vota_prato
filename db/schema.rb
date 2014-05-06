@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20100512225633) do
+ActiveRecord::Schema.define(version: 20140506184005) do
 
   create_table "clientes", force: true do |t|
     t.string   "nome",       limit: 80
@@ -45,8 +45,8 @@ ActiveRecord::Schema.define(version: 20100512225633) do
   create_table "qualificacoes", force: true do |t|
     t.integer  "cliente_id"
     t.integer  "restaurante_id"
-    t.float    "nota"
-    t.float    "valor_gasto"
+    t.text     "nota"
+    t.text     "valor_gasto"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

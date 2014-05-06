@@ -20,9 +20,9 @@
         <strong>Especialidade:</strong>
         <%= @restaurante.especialidade %><br><br>
 
-      <b>Nota média: </b><%= @restaurante.qualificacoes.average(:nota) %><br/>
+      <b>Nota média: </b><%= @restaurante.qualificacoes.maximum(:nota) %><br/>
       <b>Qualificações: </b> <%= @restaurante.qualificacoes.count %><br/>
-      <b>Preço médio: </b><%= @restaurante.qualificacoes.average(:valor_gasto)%><br/>
+      <b>Preço médio: </b><%= @restaurante.qualificacoes.maximum(:valor_gasto)%><br/>
       <br/>
     </div>
 </div>
