@@ -1,0 +1,29 @@
+<%= form_for(@restaurante) do |f| %>
+  <% if @restaurante.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger" data-dismiss="alert" aria-hidden="true">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <h2><%= pluralize(@restaurante.errors.count, "erros") %> foram encontrados:</h2>
+      <ul>
+      <% @restaurante.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="input-group">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome, class: "form-control", placeholder: "Nome" %>
+  </div>
+  <div class="input-group">
+    <%= f.label :endereco %><br>
+    <%= f.text_field :endereco, class: "form-control", placeholder: "Endereço" %>
+  </div>
+  <div class="input-group">
+    <%= f.label :especialidade %><br>
+    <%= f.text_field :especialidade, class: "form-control", placeholder: "Especialidade" %>
+  </div>
+  <div class="actions">
+    <%= f.button submit: "" , class: "btn btn-md btn-success" %>
+  </div>
+<% end %>

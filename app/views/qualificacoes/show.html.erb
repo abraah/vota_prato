@@ -1,0 +1,33 @@
+<div class="pages-action">
+<h1><i class="fa fa-laptop"></i> Mostrar Qualificação</h1>
+<span>
+<%= link_to '<i class="fa fa-chevron-left"></i> Voltar'.html_safe, qualificacoes_path, class: 'btn btn-md btn-info' %>
+</span>
+</div>
+
+<div class="panel panel-black">
+    <div class="panel-heading panel-color">
+        <h3 class="panel-title">Dados da qualificação</h3>
+    </div>
+    <div class="panel-body">
+        <p>
+          <strong>Cliente:</strong>
+          <%= @qualificacao.cliente.nome %>
+        </p>
+
+        <p>
+          <strong>Restaurante:</strong>
+          <%= @qualificacao.restaurante.nome %>
+        </p>
+
+        <p>
+          <strong>Nota:</strong>
+          <%= @qualificacao.nota %>
+        </p>
+
+        <p>
+          <strong>Valor gasto:</strong>
+          <%= @qualificacao.valor_gasto %>
+        </p>
+    </div>
+</div>

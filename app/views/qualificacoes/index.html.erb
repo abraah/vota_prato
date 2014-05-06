@@ -1,0 +1,43 @@
+<div class="pages-action">
+<h1><i class="fa fa-thumbs-o-up"></i> Qualificações</h1>
+<span>
+<%= link_to '<i class="fa fa-plus"></i> Nova'.html_safe, new_qualificacao_path, class: 'btn btn-md btn-success' %>
+<%= link_to '<i class="fa fa-refresh"></i> Atualizar'.html_safe, '/qualificacoes/', class: 'btn btn-md btn-info' %>
+</span>
+</div>
+
+<div class="panel panel-black">
+    <div class="panel-heading panel-color">
+        <h3 class="panel-title">Listagem de qualificações</h3>
+    </div>
+<div class="panel-body">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th>Restaurante</th>
+            <th>Nota</th>
+            <th>Valor gasto</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @qualificacoes.each do |qualificacao| %>
+            <tr>
+              <td><%= qualificacao.cliente.nome %></td>
+              <td><%= qualificacao.restaurante.nome %></td>
+              <td><%= qualificacao.nota %></td>
+              <td><%= qualificacao.valor_gasto %></td>
+              <td>
+              <%= link_to '<i class="fa fa-pencil"></i> Editar'.html_safe, edit_qualificacao_path(qualificacao), class: 'btn btn-md btn-success' %>
+              <%= link_to '<i class="fa fa-laptop"></i> Mostrar'.html_safe, qualificacao, class: 'btn btn-md btn-info' %>
+              <%= link_to '<i class="fa fa-times"></i> Deletar'.html_safe, qualificacao, method: :delete, data: { confirm: 'Tem certeza?' }, class: 'btn btn-md btn-danger' %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+</div>
+</div>

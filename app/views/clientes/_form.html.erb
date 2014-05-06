@@ -1,0 +1,25 @@
+<%= form_for(@cliente) do |f| %>
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger" data-dismiss="alert" aria-hidden="true">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <h2><%= pluralize(@cliente.errors.count, "erros") %> foram encontrados:</h2>
+      <ul>
+      <% @cliente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="input-group">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome, class: "form-control", placeholder: "Nome" %>
+  </div>
+  <div class="input-group">
+    <%= f.label :idade %><br>
+    <%= f.number_field :idade, class: "form-control", placeholder: "Idade" %>
+  </div>
+  <div class="actions">
+    <%= f.button submit: "" , class: "btn btn-md btn-success" %>
+  </div>
+<% end %>

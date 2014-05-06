@@ -1,0 +1,15 @@
+<div class="pages-action">
+<h1><i class="fa fa-pencil-square-o"></i> Novo Cliente</h1>
+<span>
+<%= link_to '<i class="fa fa-chevron-left"></i> Voltar'.html_safe, clientes_path, class: 'btn btn-md btn-info' %>
+</span>
+</div>
+
+<div class="panel panel-black">
+    <div class="panel-heading panel-color">
+        <h3 class="panel-title">Cadastro de clientes</h3>
+    </div>
+    <div class="panel-body">
+        <%= render 'form' %>
+    </div>
+</div>

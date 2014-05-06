@@ -1,0 +1,114 @@
+body{
+    padding-top: 60px !important;
+    background-color: #eee !important;
+}
+
+*::selection{background:#00BC9B;color:#fff}
+*::-moz-selection{background:#00BC9B;color:#fff}
+
+.pages-action{
+    margin-bottom: 40px;
+    padding: 10px;
+}
+.pages-action > h1{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.pages-action span{
+    padding-left: 10px;
+    float: right;
+}
+
+.panel-black{
+border-color: #00BC9B !important;
+border-bottom: 10px;
+}
+.panel-black>.panel-color {
+color: #fff;
+background-color: #00BC9B !important;
+border-color: #00BC9B !important;
+}
+
+.actions{
+    padding-top: 10px;
+}
+.navbar-inverse {
+background-color: #222 !important;
+border-color: #080808 !important;
+}
+
+.navbar-brand {
+color: #FFF !important;
+}
+.navbar-nav>li>a{
+    color: #fff !important;
+}
+.navbar-nav>.active>a{
+    color: #343434 !important;
+    background: #fff !important;
+}
+
+.navbar-nav>li>a:hover{
+    color: #343434 !important;
+    background: #fff !important;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+}
+
+.btn-danger{
+    color: #fff !important;
+    background-color: #d60000 !important;
+    border-color: #d60000 !important;
+}
+
+.btn-info{
+    color: #fff !important;
+    background-color: #0095D6 !important;
+    border-color: #0095D6 !important;
+}
+
+.btn-success{
+    color: #fff !important;
+    background-color: #00BC9B !important;
+    border-color: #00BC9B !important;
+}
+
+.alert-success {
+background-color: #00BC9B !important;
+border-color: #00BC9B !important;
+color: #fff !important;
+}
+
+.alert-danger {
+background-color: #d60000 !important;
+border-color: #d60000 !important;
+color: #fff !important;
+}
+
+.brand-footer{
+    font-size: 18px;
+    padding-right: 10px;
+    float: right;
+    color: #00BC9B;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+}
+
+.brand-footer:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+footer>span{
+    float: left;
+    color: #a5a5a5;
+    font-weight: lighter;
+    padding-top: 2px;
+}

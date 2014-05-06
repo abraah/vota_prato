@@ -1,0 +1,2 @@
+module OlaMundorailsHelper
+end
