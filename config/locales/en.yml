@@ -3,6 +3,8 @@ en:
     submit:
       create: "Criar %{model}"
       update: "Atualizar %{model}"
+    select:
+      prompt: "Selecione"
 
  # formatos de data e hora
   date:
