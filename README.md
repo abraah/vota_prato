@@ -1,4 +1,4 @@
-Vota Prato v0.1
+Vota Prato v0.2
 ==========
 
 Relacionamento simples para Restaurante
