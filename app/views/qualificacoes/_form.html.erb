@@ -14,11 +14,11 @@
 
   <div class="input-group">
     <%= f.label :cliente_id %><br>
-  <%= f.collection_select(:cliente_id, Cliente.order(:nome), :id, :nome, {:prompt=>true}, {:class=>"form-control"})%>
+  <%= f.collection_select(:cliente_id, Cliente.order(:nome), :id, :nome, {:prompt=>"Selecione"}, {:class=>"form-control"})%>
   </div>
   <div class="input-group">
     <%= f.label :restaurante_id %><br>
-  <%= f.collection_select(:restaurante_id, Restaurante.order(:nome), :id, :nome, {:prompt=>true}, {:class=>"form-control"})%>
+  <%= f.collection_select(:restaurante_id, Restaurante.order(:nome), :id, :nome, {:prompt=>"Selecione"}, {:class=>"form-control"})%>
   </div>
   <div class="input-group">
     <%= f.label :nota %><br>
